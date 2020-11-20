@@ -95,7 +95,11 @@ Additionally, we may use some sections of the following books. They are also rec
 * [ Introduction to Online Convex Optimization (Hazan) ](https://ocobook.cs.princeton.edu/OCObook.pdf) by Hazan (it's free)
 * [ A Modern Introduction to Onlinea Learning (Orabona) ](https://arxiv.org/pdf/1912.13213.pdf) by Orabona (it's free)
 
+
 ### Schedule
+
+<div class="schedule">
+
 | #  | <div style="width:45px">Date</div> | Topic | Reading | Lecture notes |
 |---|--------|----------|---|---|
 | 1 | 1 / 22 | Introduction | AGT Ch 1 | [Lecture note 1.pdf](http://www.columbia.edu/~ck2945/files/s20_8100/lecture_note_1_introduction.pdf) |
@@ -149,10 +153,13 @@ Additionally, we may use some sections of the following books. They are also rec
 <!-- | 27 | 4 / 29 |  | | | -->
 <!-- | 28 | 5 / 4 |  | | | -->
 
+</div>
 
 ### Related Courses
 
 Below is a list of related courses at other schools. 
+
+<div class="other_courses" >
 
 | Professor | Title | Year | School |
 |-----------|-------|------|--------|
@@ -166,3 +173,5 @@ Below is a list of related courses at other schools.
 | Constantinos Daskalakis | [ Games, Decision, and Computation ](https://stellar.mit.edu/S/course/6/sp15/6.891/index.html) | 2015 | MIT |
 | Tuomas Sandholm | [ Foundations of Electronic Marketplaces	 ](http://www.cs.cmu.edu/~sandholm/cs15-892F15/cs15-892.htm) | 2015 | CMU |
 | Tim Roughgarden | [ Algorithmic Game Theory	 ](http://timroughgarden.org/f13/f13.html) | 2013 | Stanford |
+
+</div>

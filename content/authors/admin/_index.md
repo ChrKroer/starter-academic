@@ -43,18 +43,18 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/ChrKroer
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=en&user=ckHwjPAAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/chrkroer
 - icon: dblp
   icon_pack: ai
   link: https://dblp.uni-trier.de/pid/64/10660.html
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/ChrKroer
+- icon: github
+  icon_pack: fab
+  link: https://github.com/chrkroer
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 #- icon: cv
@@ -67,8 +67,8 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
+- Faculty
 - Researchers
-- Visitors
 ---
 My name is Christian Kroer. I am an Assistant Professor of [Industrial Engineering and Operations Research](https://ieor.columbia.edu/) and a member of the [Data Science Institute](https://datascience.columbia.edu) at Columbia University. Prior to that I was a postdoc with the [Economics and Computation team](https://research.fb.com/category/economics-and-computation/) under Core Data Science at Facebook Research. I have a Ph.D. in Computer Science from Carnegie Mellon University, where I was advised by Professor [Tuomas Sandholm](http://www.cs.cmu.edu/~sandholm/). I also worked extensively with Professor [Fatma Kılınç-Karzan](https://www.andrew.cmu.edu/user/fkilinc/).
 

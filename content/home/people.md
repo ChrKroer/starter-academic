@@ -7,14 +7,14 @@ headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
 weight = 28  # Order that this section will appear.
 
-title = "People"
+title = "Students"
 subtitle = ""
 
 [content]
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
   user_groups = ["Principal Investigators",
-                 "Researchers",
+                 "PhD Students",
                  "Administration",
                  "Visitors",
                  "Alumni"]
@@ -53,3 +53,4 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+I am fortunate to work with some fantastic students. If you are interested in becoming an IEOR student, please apply [here](https://www.ieor.columbia.edu/ieor-admissions).

@@ -32,6 +32,32 @@
   }
 }
 
-.pub-list-item p {
-  margin-bottom:0;
+// .pub-list-item {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .pub-list-item p {
+//   margin-bottom: 0;
+// }
+// .li-cite-author {
+// }
+
+.card-simple {
+  padding: 10px 10px 10px 10px;
+}
+
+.card-simple .mt-3 {
+  margin-top: 0.2rem !important;
+}
+.card-simple .article-metadata {
+  margin-bottom: 8px;
+}
+// .card-simple .btn-links {
+// }
+
+// .card-simple .article-title {
+
+// }
+.card-simple .article-title a {
+  font-size: 18px !important;
 }

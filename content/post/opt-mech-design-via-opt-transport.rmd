@@ -1,0 +1,144 @@
+---
+title: Optimal Mechanism Design via Optimal Transport
+date: 2020-12-02
+math: false
+draft: true
+diagram: true
+bibliography: [refs.bib]
+---
+
+
+$\newcommand{\mP}{{\mathcal P}}$
+$\newcommand{\mT}{{\mathcal T}}$
+$\newcommand{\mM}{{\mathcal M}}$
+$\newcommand{\mU}{{\mathcal U(X)}}$
+$\newcommand{\mL}{{\mathcal L_1(X)}}$
+
+
+Suppose that you have $n$ goods that you wish to sell to a single buyer. That buyer draws their valuation from a density $f$ on the space of possible valuations. How should you do this?
+This post will explain an approach based on optimal transport. 
+
+The approach described here was developed by @daskalakis2017strong, and we will mostly follow their presentation and notation.
+
+Note that the equations on this page may not display well on narrow screens.
+
+### Mechanism Design Problem
+More specifically, we assume that valuations are additive across the goods, and they come from the compact space 
+$X = \prod_{i=1}^n [x_i^{\text{low}}, x_i^{\text{high}}]$, where $0 \leq x_i^{\text{low}} \leq x_i^{\text{high}}$.
+The valuation vector is drawn according to a density function $f: X \rightarrow \mathbb R_+$ which is assumed to be continuous and differentiable, with bounded partial derivatives. 
+
+A mechanism $\mathcal M$ lets the buyer report a valuation $x$ and then receive a (potentially randomized) allocation of goods, along with a payment. More concretely, the mechanism consists of:
+
+* an allocation function $\mathcal P: X \rightarrow [0,1]^n$  specifying the vector of probabilities $\mathcal P(x)$ that the buyer receives each good upon reporting a valuation vector $x$.
+* a payment function $\mathcal T: X \rightarrow \mathbb R$ specifying how much the buyer pays upon reporting $x$.
+
+A few comments about this setup are in order. First, our allocation function $\mP$ returns probabilities. This means that we are potentially going to allow our mechanism to assign items fractionally, or in other words, sell lottery tickets. Second, we are constraining ourselves to mechanisms that take a reported valuation vector, yielding an allocation probability and payment.
+By the [revelation principle](https://en.wikipedia.org/wiki/Revelation_principle), direct mechanisms such as the above, where the buyer reports their valuation vector, are without loss of generality.
+
+We will assume that the buyer is interested in maximizing their expected utility. For a given type $x$, reporting type $x'$ yields expected utility $\langle x, \mP(x') \rangle - \mT(x')$.
+
+Our goal will be to find $\mP$ and $\mT$ such that we have the following two conditions:
+* Incentive compatibility (IC): for any buyer typer $x\in X$, reporting $x$ should yield at least as much utility as reporting any other type $x'\in X$:
+$$\langle x, \mP(x) \rangle - \mT(x) \geq \langle x, \mP(x') \rangle - \mT(x')$$
+* Individual rationality (IR): for any buyer typer $x\in X$, participating truthfully in the mechanism should yield nonnegative utility:
+$$\langle x, \mP(x) \rangle - \mT(x) \geq 0$$
+
+Subject to these constraints, we wish to pick the mechanism that maximizes revenue when the buyer reports truthfully. The revenue for a particular pair $\mP,\mT$ is:
+$$ \int_X \mT(x) f(x)dx $$
+
+
+Finally, let's try to understand why Rochet's characterization works. 
+- (Correct allocation) In order for $\nabla u(x)$ to be an allocation, we need it to lie in $[0,1]^n$; this is achieved by the nondecreasing and 1-Lipschitz properties. 
+- (IR) In order to get IR, we need each utility to be nonnegative, so the domain of $u$ must be the nonnegative reals. 
+- (IC) Since $u$ is convex, we have the subgradient inequality $u(x) \geq u(x') + \langle x-x', \nabla u(x')$ for all $x,x'\in X$. But since $\nabla u(x')$ is exactly the allocation vector when the buyer reports $x'$, we get that the right-hand side of the subgradient inequality is exactly the utility for the type $x$ when reporting $x'$. Thus, convexity ensures IC.
+
+### Reducing optimal mechanism design to that of finding truthful utility functions
+
+A classical result due to [Rochet (1987)](https://www.sciencedirect.com/science/article/abs/pii/0304406887900073) states that the set of IC and IR mechanisms can be characterized in terms of utility functions that are induced by reporting truthfully under the mechanism. The induced utility $u$ associated to a mechanism $\mP,\mT$ is the expected value that a given type gets for reporting truthfully:
+$$ u(x) = \langle x, \mP(x) \rangle - \mT(x)$$
+
+Rochet's characterization states that a mechanism $\mM$ is IC and IR if and only if its induced utility function $u$ is convex, nonnegative, nondecreasing, and $1$-Lipschitz with respect to the $\ell_1$ norm. Moreover, given such a function $u$ which is differentiable, a corresponding IC and IR mechanism can be constructed by setting $$\mP(x) = \nabla u(x),\quad \mT(x) = \langle \nabla u(x), x\rangle - u(x).$$
+If $u$ is not differentiable then for the measure-zero points of nondifferentiability, a similar construction can be performed using subgradients.
+
+
+Let $\mU$ be the set of continuous, convex, and nondecreasing functions on $X$. Let $\mL$ be the set of all $1$-Lipschitz functions on $X$.
+With the above characterization in mind, we can reduce our search for an optimal mechanism to the problem of optimizing over the intersection $\mU \cap \mL$, with the additional constraint of nonnegavitiy. The revenue for a given $u$ is
+$$ \int_X \left[ \langle \nabla u(x), x\rangle - u(x) \right] f(x)dx $$
+and it follows that an optimal mechanism is derived from a solution $u$ to the optimization problem
+\begin{align}
+ \sup_{u \geq 0} & \int_X \left[ \langle \nabla u(x), x\rangle - u(x) \right] f(x)dx \\\\
+ \text{s.t.}\ \ & u \in \mU \cap \mL
+\end{align}
+
+Next we note that, given some function $u$ defining an IC and IR mechanism, we can construct a nonnegative function $\tilde u = u - u(x^{low})$ which weakly increases revenue, and still yields an IC and IR mechanism. Thus we can reduce our problem to:
+
+\begin{equation}
+\begin{split}
+ \sup_{u} & \int_X \left[ \langle \nabla u(x), x\rangle - (u(x) - u(x^{low})) \right] f(x)dx \\\\
+ \text{s.t.}\ \ & u \in \mU \cap \mL
+\end{split}
+(\#eq:rochet-opt)
+\end{equation}
+
+
+### Simplifying with the Divergence Theorem
+
+At this point, we have a fairly compelling optimization problem. But we can make it even nicer by getting rid of $\nabla u$. To accomplish this, we use the [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem) and the fact that we assumed $X$ to be compact. We apply the divergence theorem on the following surface integral:
+\begin{align}
+\int_{\partial X} u(x)f(x)\langle x, \hat n \rangle dx
+ = &\int_X \bigg[ \langle \nabla u(x), x \rangle f(x) + \langle \nabla f(x), x \rangle u(x)  \\\\
+ &  + n u(x)f(x) \bigg] dx.
+ \end{align}
+ 
+ Rearranging terms, we get
+\begin{align}
+\int_X  \langle \nabla u(x), x \rangle f(x) dx
+= &
+\int_{\partial X} u(x)f(x)\langle x, \hat n \rangle dx \\\\
+ & -  \int_X u(x) \bigg[ \langle \nabla f(x), x \rangle  
+   + n f(x) \bigg] dx.
+(\#eq:div)
+ \end{align}
+ 
+ Note that the left-hand-side integral is exactly the first term in the objective of \@ref(eq:rochet-opt). 
+ We can now plug \@ref(eq:div)  into \@ref(eq:rochet-opt). 
+ If we do that, note that we get an inner product of the linear functional $u$ with a complicated functional that depends on $f$. This complicated functional can be represented by the following signed measure:
+ \begin{align}
+ \mu(A)  = &
+ \int_{\partial X} \mathbb I_A(x) f(x)\langle x, \hat n \rangle dx\\\\
+ & -  \int_X \mathbb I_A(x) \bigg[ \langle \nabla f(x), x \rangle
+ + (n+1) f(x) \bigg] dx 
+ + \mathbb I_A(x^{low})
+ \end{align}
+
+
+Now, using our new signed measure and \@ref(eq:div), we get that \@ref(eq:rochet-opt) can be rewritten as 
+\begin{equation}
+\begin{split}
+ \sup_{u} & \int_X u\ d\mu \\\\
+ \text{s.t.}\ \ & u \in \mU \cap \mL
+\end{split}
+(\#eq:signed-rochet-opt)
+\end{equation}
+
+\@ref(eq:signed-rochet-opt) is the optimization problem that we will view as our primal optimization problem. An optimal $u$ for this problem yields an optimal IC and IR mechanism for a single additive buyers.
+
+
+### Strong Duality via Optimal Transport
+
+The main result of @daskalakis2017strong is a strong duality result for \@ref(eq:signed-rochet-opt), where the dual is given by a relaxed optimal transport problem:
+
+```{theorem}
+Let $\mu$ be the transformed measure associated to the probability density $f$, then we have
+\begin{equation}
+ \sup_{u \in \mU \cap \mL}\ \int_X u\ d\mu
+ = \inf_{\substack{\gamma \in \Gamma_+, \\ \gamma_1 - \gamma_2 \succcurlyeq_{cvx} \mu}} \int_{X\times X} \|x - y \|_1 d \gamma(x,y)
+\end{equation}
+where both the supremum and infimum are achieved. 
+```
+
+For a given measure $\gamma$ on $X\times X$, $\gamma_1$ and $\gamma_2$ are the marginals of $\gamma$, i.e. $\gamma_1(A) = \gamma(A\times X)$ and $\gamma_2(A) = \gamma(X\times A)$.
+
+The constraint $\gamma_1 - \gamma_2 \succcurlyeq_{cvx} \mu$ is a convex dominance constraint. For measures $\alpha, \beta \in \Gamma(X)$, this constraint holds if for all nondecreasing convex functions $u \in \mU$, $\int u d\alpha \geq \int ud\beta$.
+
+### References

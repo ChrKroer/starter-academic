@@ -19,7 +19,7 @@ The following are my two favorite resources for getting started on various aspec
 The following are more advanced and/or specialized books:
 
 * [A Modern Introduction to Online Learning](https://arxiv.org/pdf/1912.13213.pdf) by Orabona. Excellent coverage of contemporary (circa 2019) online learning.
-* [Lectures on Modern Convex Optimization](http://www2.isye.gatech.edu/~nemirovs/LMCO_LN2019NoSolutions.pdf) by Nemirovski. Comprehensive treatment of topics such as conic programming, SDPs, interior point methods, and mirror descent/mirror prox-type algorithms. I reopen Chapter 5 of these lecture notes on a yearly basis for various papers.
+* [Lectures on Modern Convex Optimization](https://www2.isye.gatech.edu/~nemirovs/LMCOLN2021WithSol.pdf) by Nemirovski. Comprehensive treatment of topics such as conic programming, SDPs, interior point methods, and mirror descent/mirror prox-type algorithms. I reopen Chapter 5 of these lecture notes on a yearly basis for various papers.
 * [Fundamentals of Convex Analysis](https://www.amazon.com/Fundamentals-Convex-Analysis-Grundlehren-Editions/dp/3540422056/ref=sr_1_1?dchild=1&keywords=fundamentals+of+convex+analysis&qid=1589590457&s=books&sr=1-1) by Hiriart-Urruty and Lemaréchal. A nice text for a more mathy treatment of convex analysis.
 * [First-Order Methods in Optimization](https://my.siam.org/Store/Product/viewproduct/?ProductId=29044686) by Amir Beck. This is a good source for things like proximal algorithms and ADMM. Only recommended if you're directly interested in these types of algorithms.
 

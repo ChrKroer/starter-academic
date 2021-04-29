@@ -31,7 +31,7 @@ interests:
 social:
 - icon: home
   icon_pack: fas
-  link: https://phd.ieor.columbia.edu/directory/yuan-gao
+  link: https://gaoyuancolumbia.weebly.com/
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=OUwPugkAAAAJ&hl=en

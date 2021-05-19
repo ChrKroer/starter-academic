@@ -30,7 +30,7 @@ interests:
 social:
 - icon: home
   icon_pack: fas
-  link: https://www.linkedin.com/in/rachitesh-kumar-92938917a/
+  link: https://sites.google.com/view/rachitesh/home
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.com/citations?user=OUwPugkAAAAJ&hl=en

@@ -70,8 +70,9 @@ user_groups:
 - Faculty
 - Researchers
 ---
-My name is Christian Kroer. I am an Assistant Professor of [Industrial Engineering and Operations Research](https://ieor.columbia.edu/) and a member of the [Data Science Institute](https://datascience.columbia.edu) at Columbia University. Prior to that I was a postdoc with the [Economics and Computation team](https://research.fb.com/category/economics-and-computation/) under Core Data Science at Facebook Research. I have a Ph.D. in Computer Science from Carnegie Mellon University, where I was advised by Professor [Tuomas Sandholm](http://www.cs.cmu.edu/~sandholm/). I also worked extensively with Professor [Fatma Kılınç-Karzan](https://www.andrew.cmu.edu/user/fkilinc/).
+My name is Christian Kroer. I am an Assistant Professor of [Industrial Engineering and Operations Research](https://ieor.columbia.edu/) and a member of the [Data Science Institute](https://datascience.columbia.edu) at Columbia University. 
+My research interests are at the intersection of operations research, economics, and computation, with a focus on how optimization and AI methods enable large-scale economic solution concepts. 
+Previously, I was a postdoc with the [Economics and Computation team](https://research.fb.com/category/economics-and-computation/) under Core Data Science at Facebook Research. I have a Ph.D. in Computer Science from Carnegie Mellon University, where I was advised by Professor [Tuomas Sandholm](http://www.cs.cmu.edu/~sandholm/). During my Ph.D., I also worked extensively with Professor [Fatma Kılınç-Karzan](https://www.andrew.cmu.edu/user/fkilinc/).
 
-I am a winner of the 2016-2018 [Facebook Fellowship](https://research.facebook.com/blog/announcing-the-2016-2017-cohort-of-facebook-fellows/) in economics and computation. I was a runner-up in the [2017 INFORMS Computing Society Student Paper Competition](https://www.informs.org/Recognizing-Excellence/Award-Recipients/Christian-Kroer).
 
 Please see my lab's [GitHub page](https://github.com/CoffeeAndConvexity) for code and data associated with our work.

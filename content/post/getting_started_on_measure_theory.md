@@ -19,6 +19,7 @@ Because measure theory is pretty abstract, it can be a bit boring if started wit
 
 ## A Bit More Depth
 
+* [Measures, Integrals and Martingales](https://www.cambridge.org/de/academic/subjects/statistics-probability/probability-theory-and-stochastic-processes/measures-integrals-and-martingales-2nd-edition?format=PB&isbn=9781316620243) by Rene Schilling. A bit more approachable than Rosenthal's book.
 * [A First Look at Rigorous Probability Theory](http://probability.ca/jeff/grprobbook.html) by Jeffrey S. Rosenthal. 
 
 ## Measure Theory for Economics Research

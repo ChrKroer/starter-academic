@@ -1,0 +1,7 @@
+
+See:
+https://discourse.gohugo.io/t/academic-theme-failed-to-extract-shortcode-template-for-shortcode-callout-not-found/28857
+
+TLDR:
+hugo mod clean
+hugo mod get -u ./...

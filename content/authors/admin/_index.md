@@ -74,5 +74,6 @@ My name is Christian Kroer. I am an Assistant Professor of [Industrial Engineeri
 My research interests are at the intersection of operations research, economics, and computation, with a focus on how optimization and AI methods enable large-scale economic solution concepts. 
 Previously, I was a postdoc with the [Economics and Computation team](https://research.fb.com/category/economics-and-computation/) under Core Data Science at Facebook Research. I have a Ph.D. in Computer Science from Carnegie Mellon University, where I was advised by Professor [Tuomas Sandholm](http://www.cs.cmu.edu/~sandholm/). During my Ph.D., I also worked extensively with Professor [Fatma Kılınç-Karzan](https://www.andrew.cmu.edu/user/fkilinc/).
 
+A third-person bio can be found [here](http://www.columbia.edu/~ck2945/files/bio.txt).
 
 Please see my lab's [GitHub page](https://github.com/CoffeeAndConvexity) for code and data associated with our work.

@@ -40,7 +40,7 @@ We will most likely cover the following applications:
 * *Instructor:* [ Christian Kroer ](http://www.christiankroer.com)
 * *Time:* Mondays & Wednesdays 1:10-2:25pm
 * *Location:* 702 Hamilton Hall
-* *Office hours:* Wednesday 2:25-3:30pm on zoom
+* *Office hours:* Wednesday 2:25-3:30pm Mudd 314
 * *Courseworks site:* [courseworks site](https://courseworks2.columbia.edu/courses/147216)
 ## Prerequisites
 
@@ -88,7 +88,7 @@ A rough outline is as follows:
   * Recommender systems
   * Bias and fairness in machine learning and internet advertising
 * Fair Resource Allocation
-  * fair division via competitive equilibria
+  * Fair division via competitive equilibria
   * Fair course seat allocation 
   * Allocating food to food banks
 * Electricity markets
@@ -139,11 +139,11 @@ Project rules:
 
 | #  | <div style="width:45px">Date</div> | Topic | Reading | Lecture notes |
 |---|--------|----------|---|---|
-| 1 | 1 / 19 | Course Intro, Intro to game theory| AGT Ch 1, 2 |  |
-| 2 | 1 / 24 | Intro to game theory and auctions | AGT Ch 9, 10 | |
-| 3 | 1 / 26 | Intro to game theory and auctions | AGT Ch 9, 10 | |
-| 4 | 1 / 31 | |  | |
-| 5 | 2 / 2 |  |  | |
+| 1 | 1 / 19 | Course Intro |  |  [Lec. note 1](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_1_introduction.pdf)|
+| 2 | 1 / 24 | Intro to game theory and auctions | AGT Ch 1, 2 | [Lec. note 2](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_2_gt.pdf)|
+| 3 | 1 / 26 | Intro to game theory and auctions | AGT Ch 9, 10 | [Lec. note 3](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_3_intro_auctions_and_mech_design.pdf)|
+| 4 | 1 / 31 | Regret Minimization | Lecture note (you may skip the proofs of Theorems 2 and 3) | [Lec. note 4](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_4_regret_and_sion.pdf)|
+| 5 | 2 / 2 | Nash eq. from regret min. | Lect. Note 5 | [Lec. note 5](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_5_nash_from_rm.pdf)|
 | 6 | 2 / 7 |   | | |
 | 7 | 2 / 9 | |  | |
 | 8 | 2 / 14 |  |  |  |
@@ -181,7 +181,9 @@ Below is a list of related courses at other schools.
 
 | Professor | Title | Year | School |
 |-----------|-------|------|--------|
+| John P. Dickerson | [ Mechanism Design ](https://mech-design.github.io/) | 2022 | UMD |
 | Gabriele Farina & Tuomas Sandholm | [ Computational Game Solving ](https://www.cs.umd.edu/class/spring2018/cmsc828m/) | 2021 | CMU |
+| Christian Kroer  | [ Economics, AI, and Optimization ](http://www.columbia.edu/~ck2945/courses/s20_8100/) | 2020 | Columbia |
 | John P. Dickerson | [ Applied Mechanism Design for Social Good ](https://www.cs.umd.edu/class/spring2018/cmsc828m/) | 2018 | UMD |
 | Fei Fang | [ Artificial Intelligence Methods for Social Good ](https://feifang.info/artificial-intelligence-methods-for-social-good-spring-2018/) | 2018 | CMU |
 | Yiling Chen | [ Topics at the Interface between Computer Science and Economics ](https://canvas.harvard.edu/courses/9622) | 2016 | Harvard |

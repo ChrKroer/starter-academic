@@ -144,7 +144,7 @@ Project rules:
 | 3 | 1 / 26 | Intro to game theory and auctions | AGT Ch 9, 10 | [Lec. note 3](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_3_intro_auctions_and_mech_design.pdf)|
 | 4 | 1 / 31 | Regret Minimization | Lecture note (you may skip the proofs of Theorems 2 and 3) | [Lec. note 4](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_4_regret_and_sion.pdf)|
 | 5 | 2 / 2 | Nash eq. from regret min. | Lect. Note 5 | [Lec. note 5](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_5_nash_from_rm.pdf)|
-| 6 | 2 / 7 |   | | |
+| 6 | 2 / 7 | Extensive-Form Games Intro  | AGT 3.1-3.2, 3.7 - 3.11 | [Lec. note 6](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_6_extensive_form_games.pdf)|
 | 7 | 2 / 9 | |  | |
 | 8 | 2 / 14 |  |  |  |
 | 9 | 2 / 16 | | | |

@@ -55,7 +55,7 @@ The course will be lecture-based, with Christian Kroer giving the lectures. At t
 
 Readings will consist of a mixture of textbooks and course notes, which will be uploaded after lectures.
 
-Students will complete a project, which should be done in groups of 3-4 students. Special permission is needed to do an individual project.
+Students will complete a project, which should be done in groups of 2-4 students. Special permission is needed to do an individual project.
 
 Grading will be as follows:
 
@@ -149,24 +149,24 @@ Project rules:
 | 8 | 2 / 14 | CFR | Lect. note 6, or [this tutorial](http://modelai.gettysburg.edu/2013/cfr/cfr.pdf) | same as above |
 | 9 | 2 / 16 | Fair Division | AGT Ch 5 & 6 | [Lec. note 7](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_7_fair_division.pdf)|
 | 10 | 2 / 21 | Fair Indivisible Allocation |  | [Lec. note 8](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_8_fair_allocation_indivisible.pdf) |
-| 11 | 2 / 23 |  | | |
-| 12 | 2 / 28 |  |  |  |
-| 13 | 3 / 2 |  |  | |
-| 14 | 3 / 7 |  | |  |
-| 15 | 3 / 9 |  |  |  |
+| 11 | 2 / 23 | Continue fair allocation | | |
+| 12 | 2 / 28 | Internet advertising auctions 1: position auctions | Ch. 15 of [Easley and Kleinberg](https://www.cs.cornell.edu/home/kleinber/networks-book/) | [Lec. note 9](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_9_internet_advertising_auctions.pdf) |
+| 13 | 3 / 2 | Continue position auctions | |  |
+| 14 | 3 / 7 | Internet advertising auctions 2: budgets | Lec. note 10 Sec 1,2, and 3 | [Lec. note 10](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_10_auctions_with_budgets.pdf) |
+| 15 | 3 / 9 | Internet advertising auctions 3: online budget management | Lec. note 11 | [Lec. note 11](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_11_online_budget_management.pdf) |
 | 16 | 3 / 14 | <div style="background-color:tomato;">Spring break: no class </div> |  |
 | 17 | 3 / 16 | <div style="background-color:tomato;">Spring break: no class </div> |  |
-| 18 | 3 / 21 |  |  |  |
-| 19 | 3 / 23 |  | | |
-| 20 | 3 / 28 |  | | |
-| 21 | 3 / 30 |  | | |
-| 22 | 4 / 4 |  |  |  |
-| 23 | 4 / 6 |  |  |  |
-| 24 | 4 / 11 |  |  | |
-| 25 | 4 / 13 |  |  | |
-| 26 | 4 / 18 |  |  | |
-| 27 | 4 / 20 |  |  | |
-| 28 | 4 / 25 | Project presentations (Maybe?) |  | |
+| 18 | 3 / 21 | class canceled |  |  |
+| 19 | 3 / 23 | Fairness in Ad Auctions | Lec. note 12 | [Lec. note 12](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_12_demographic_fairness_ad_auctions.pdf) |
+| 20 | 3 / 28 | Electric Grid Operations | Lec. note 13 | [Lec. note 13](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_13_electric_grid_intro.pdf) |
+| 21 | 3 / 30 | Electric Grid Pricing | Lec. note 13 | |
+| 22 | 4 / 4 | Electric Grid Unit Commitment | Lec. note 14 | [Lec. note 14](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_14_electric_grid_2.pdf) |
+| 23 | 4 / 6 | Fair Combinatorial Allocation | Lec. note 15 | [Lec. note 15](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_15_combinatorial_fair_allocation.pdf) |
+| 24 | 4 / 11 | Project 1on1 meetings |  | |
+| 25 | 4 / 13 | Project 1on1 meetings |  | |
+| 26 | 4 / 18 | Stackelberg Equilibrium | Lec. note 16 | [Lec. note 16](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_16_stackelberg_games.pdf) |
+| 27 | 4 / 20 | Stackelberg Equilibrium | Lec. note 16 | [Lec. note 16](http://www.columbia.edu/~ck2945/files/ai_games_markets/lecture_note_16_stackelberg_games.pdf) |
+| 28 | 4 / 25 | Project presentations  |  | |
 | 29 | 4 / 27 | Project presentations |  | |
 | 30 | 5 / 2 | Project presentations |  | |
 

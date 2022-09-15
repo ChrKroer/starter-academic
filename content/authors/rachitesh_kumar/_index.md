@@ -31,9 +31,9 @@ social:
 - icon: home
   icon_pack: fas
   link: https://sites.google.com/view/rachitesh/home
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.com/citations?user=OUwPugkAAAAJ&hl=en
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=p06Ei08AAAAJ&hl=en
 - icon: dblp
   icon_pack: ai
   link: https://dblp.org/pid/245/9023.html
